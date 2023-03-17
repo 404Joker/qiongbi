@@ -2,14 +2,14 @@ version: '3.3'
 
 services:
    db:
-     image: docker.pkg.github.com/naiba/qiongbi/web:latest
+     image: docker.pkg.github.com/zhufacai/qiongbi/web:latest
      volumes:
        - ./data/:/qiongbi/data
      restart: always
      ports:
-       - "172.17.0.1:8001:8080"
+       - "0.0.0.0:8001:8080"
      environment:
-       - AppID=qiongbi
-       - PubKey=xxxxxx
-       - PriKey=xxxxxx
-       - Domain=example.com
+       - AppID=2019111269052708
+       - PubKey=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzNLsIn0gOtF3ER1NPKob2YOrj3l6puaO3YySC+cyjw+9osSMoYXhGC9bJ5QdaQ3d2blXGiXeFmVgv8XRn4LdLY2mlFaTuFLcy5oybQzOAAyT2MJSZZFyJdEoYUlkH8ae7rhaZOgpDJY0t4fivImYjI99DTb7pLucVtKLuEWU2LL31TxbH1wAX+nBC5IFN1gRKT3xZKUvggDOGMOCEFktsHuy0h7xeWzm2ANm2SyqlU1aa9G5nFTM+93w8YefsLurqjqNmVZaCXwWzFazZx+hQisMZN1B8zKjTQaeydruLhrwCiTBJVnvS95Y6Wp4t7LF4p/qrvdQt/qaAqDMRic/EwIDAQAB
+       - PriKey=MIIEowIBAAKCAQEAwWZhQXqlMcjJgbwZbaMwpl3cAI1RL/z56Pkv0wglKJ+vIRwGoIZ9XWnItG010eLbMp9FaOzh3sRg55gd/YOZEsBASaI1FVNe2JMjaJxGvnN/V9pqizj5fPuV7TVkroA7af1Otd8h/UJzrodNEaITfoAXoeeW8Bjamy6YGTN1v4s+aLm+NUuYZtmq3YHSdxG5Dx1bCWg+UmS2fJQHHzcITivzQ292kcs051hwK3cbCFIa/FSdVwh3TuNQyj74zcL0fUntzWy2JNBWeZd4FLPx+/dab3FEywv8hHp13dRpo4LaDnG2IiscdpGj3RBzrJ+b85PxcvTTGfQddjZE1G17tQIDAQABAoIBAD9O0TVK/XpvfK7wMO63xbwf611u5Q2tZO1DbMlK2EcVBpHzB6RSggUrFJ0jRsPe29wVUPZI3KM8a3BEVkTfaCNANYslAvVpJhoFCEk9Jtc/HYdXoxrR2rFz9Z8BpGSO62QFnFdipFCwCQgvmCXWhUUajyHbmogbyquTtAxD0R6S1rX0ZLGNG9BVgqTDJRg1nLAfwuW6R6QXypYurh4G5WuW/NopVV0Osigk56tjx2sPRXLf8P8b/uK+M5x9F2OaULeFts62KtQVf7Kz8I9Tl013xHdJf2yAKdnR//SFWEZGgXTo8+rUdmm+cGKl4W1ry8FX0fQrrpDDixewm21tyP0CgYEA9rqY1JR6yEy64X7Q9lkUM+U/o1lpio/1ONpO+NVymHy8MixvMtnAzPBVfLcuLkYxGqZA+DiPzcoxjFG/UGob0l3+nFZgD3H+G//hjjTqqJ9Z5ptrDaDC7znZ5Ch2kPHAzVLWAH0V2OojEfdwF52h86FKwr5CWrqYZ21JGJ1z+N8CgYEAyKrJO4+uodsrY1/vNjgv19bFU3rOoaQDUkT5UCZ1DX7tLWqaE1BRWHpJUo6mzfYEf8SGRol2mQq5vAmn7u3jlRZZ6I5wQw3wK8ucjXw3ChR9o8M/L/g1DEP1WzQ2IrtLjsAjTpfwsrPcSvpNoHSM7Hs+xfUgy2W9uyCkGuxd2esCgYEAufs0IuH9n6i/IiVO7LN/GBNRohdPCES1q3JcHxP+etVjo0p9U85yl8j+F7GZHQaKEzWJOdKhC5XDPauNU9d4O13hBAXUCTB7RK3gXyqiTBM6WCuFSdOJvXxVM7gQj/e7xsoPSHUBl+3+G5fyJcsL/jLxwNRb/jozkZr+g5CEj+8CgYB0vZ8KrqFq+mW4j4RMJ831pLXxxf1WXmOsRgJBFc59Rn1XMbBnUg+xCJuFkwYJxnmBl2SCvtAnYu0BLyDqyKzg/DrcJ5m5+O7jm7X9PemLTLZ3QkyNbLn348VnBO4FsK7ZYoBn5c8bN7YOTKZCleuyXFT9t4kXq54AspGmNCK5dwKBgAbXRwIo0HUsbD5SQ8qotVM2yIcmxVccyTEJB4uVGHf2y/IOvWTg7DrIwPBdWTJrGR6GpeeeZwjYp6jB6KPCzIsqV9mzEKlfBdpDy49nifgZbQk+NCi7FQhsZQA0J/AtHQuflCxdloxdZ9o6tnlYZpF+xJAqyqkGvXaAvEnnyXM7
+       - Domain=pay.joker.cc
